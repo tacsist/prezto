@@ -9,3 +9,9 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export GTK_THEME=Catppuccin-Mocha-Standard-Mauve-Dark
+
+typeset -U path PATH
+path=(~/.local/bin $path)
+export PATH
